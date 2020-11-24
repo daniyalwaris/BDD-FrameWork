@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Test script to test end to end successful checkout flow for purchasing",
+        "description": "",
+        "id": "ui-automation-framework;test-script-to-test-end-to-end-successful-checkout-flow-for-purchasing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8175679300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the purchase page",
+            "match": {
+              "location": "SuccessfulPaymentScript.webpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74729000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "title of page is coco",
+            "match": {
+              "location": "SuccessfulPaymentScript.webpage_validation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 437346200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User able to proceed with the checkout flow for purchasing Pillow",
+            "match": {
+              "location": "SuccessfulPaymentScript.customer_checkout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3170863100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User able to purchase though the Credit card payment method and Enter the \"4811111111111114\" and \"0221\" and \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4811111111111114",
+                  "offset": 75
+                },
+                {
+                  "val": "0221",
+                  "offset": 98
+                },
+                {
+                  "val": "123",
+                  "offset": 109
+                }
+              ],
+              "location": "SuccessfulPaymentScript.customercheckout_paymentMethod(String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "UI automation framework",
+    "description": "",
+    "id": "ui-automation-framework",
+    "keyword": "Feature",
+    "uri": "D:/daniyalwaris/BDD-FrameWork/CucummberBDD_Framework/src/main/java/Feature/Successful_Payment.feature"
+  }
+]
