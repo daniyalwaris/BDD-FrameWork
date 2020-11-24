@@ -12,9 +12,12 @@ import cucumber.api.junit.Cucumber;
 		glue= {"StepScript"}, 						//Path of the Script File
 		plugin= {"pretty","html:test-output","json:json_output/cucumber.json","junit:junit_xml/cucumber.xml"}, // In order to generate the output file for the system.
 		strict = true,   // This attricbute will map from the Feature File
+		//dryRun = true ,
 		monochrome = true 							//Display the concole output in a proper readable format
 		
 		)
+
+
 
 public class TestRunner
 {

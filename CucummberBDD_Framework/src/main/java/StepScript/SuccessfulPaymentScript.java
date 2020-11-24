@@ -46,8 +46,8 @@ public class SuccessfulPaymentScript
 
 	}
 	
-	@Then("^User able to purchase though the Credit card payment method$")
-	public void customercheckout_paymentMethod()
+	@Then("^User able to purchase though the Credit card payment method and Enter the \"(.*)\" and \"(.*)\" and \"(.*)\"$")
+	public void customercheckout_paymentMethod(String creditCardNumber, String expiryDate, String OPT)
 	{
 		//*[contains(text(),\"Continue\")]
 		 	driver.switchTo().frame(0);
@@ -56,11 +56,9 @@ public class SuccessfulPaymentScript
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
 			driver.findElement(By.xpath("//*[@id=\"payment-list\"]/div[1]/a")).click();
-			
-
-			driver.findElement(By.name("cardnumber")).sendKeys("4811111111111114");
-			driver.findElement(By.xpath("//*[@id=\"application\"]/div[3]/div/div/div/form/div[2]/div[2]/input")).sendKeys("0221");
-			driver.findElement(By.xpath("//*[@id=\"application\"]/div[3]/div/div/div/form/div[2]/div[3]/input")).sendKeys("123");
+			driver.findElement(By.name("cardnumber")).sendKeys(creditCardNumber);
+			driver.findElement(By.xpath("//*[@id=\"application\"]/div[3]/div/div/div/form/div[2]/div[2]/input")).sendKeys(expiryDate);
+			driver.findElement(By.xpath("//*[@id=\"application\"]/div[3]/div/div/div/form/div[2]/div[3]/input")).sendKeys(OPT);
 			driver.findElement(By.className("button-main-content")).click();
 		
 	}
