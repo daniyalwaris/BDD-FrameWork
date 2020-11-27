@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.858618">
-    <testcase classname="UI automation framework" name="Test script to test end to end successful checkout flow for purchasing" time="11.858618">
-        <system-out><![CDATA[Given User is on the purchase page..........................................passed
-When title of page is coco..................................................passed
-Then User able to proceed with the checkout flow for purchasing Pillow......passed
-Then User able to purchase though the Credit card payment method and Enter the "4811111111111114" and "0221" and "123".passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.460027">
+    <testcase classname="UI automation framework" name="Test Unsuccesful end to end checkout flow due expire card details and Show the Output" time="11.460027">
+        <system-out><![CDATA[Given User is on the webPage For buying pillows.............................passed
+When title of page is Sample Store..........................................passed
+Then User able to proceed with the payment checkout.........................passed
+Then User able to enter the Credit card details.............................passed
 ]]></system-out>
     </testcase>
 </testsuite>
