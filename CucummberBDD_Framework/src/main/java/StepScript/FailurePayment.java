@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.DataTable;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 
 import java.util.concurrent.TimeUnit;
@@ -16,12 +17,28 @@ import org.junit.*;
 
 public class FailurePayment
 {
+	
 	WebDriver driver;
+	
+	
+	@Before
+	public void setBrowser()
+	{
+		System.out.println("WebDriver is Set");
+		System.setProperty("webdriver.chrome.driver", "D:\\daniyalwaris\\BDD-FrameWork\\chromedriver_mac64\\chromedriver.exe");	
+	}
+	
+	@After
+	public void closeBrowser()
+	{
+		System.out.println("Close the Broswer After All execution   ");
+		driver.close();
+	}
+	
 	
 	@Given("^User is on the webPage For buying pillows$")
 	public void webpage() 
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\daniyalwaris\\BDD-FrameWork\\chromedriver_mac64\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://demo.midtrans.com/");
 		

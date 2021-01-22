@@ -6,6 +6,10 @@ formatter.feature({
   "id": "ui-automation-framework",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 397200,
+  "status": "passed"
+});
 formatter.scenario({
   "comments": [
     {
@@ -66,28 +70,28 @@ formatter.match({
   "location": "FailurePayment.webpage()"
 });
 formatter.result({
-  "duration": 8018030700,
+  "duration": 10751256000,
   "status": "passed"
 });
 formatter.match({
   "location": "FailurePayment.webpage_validation()"
 });
 formatter.result({
-  "duration": 89504900,
+  "duration": 48426200,
   "status": "passed"
 });
 formatter.match({
   "location": "FailurePayment.customer_checkout()"
 });
 formatter.result({
-  "duration": 312400300,
+  "duration": 859920700,
   "status": "passed"
 });
 formatter.match({
   "location": "FailurePayment.customercheckout_paymentMethod(DataTable)"
 });
 formatter.result({
-  "duration": 3040091500,
+  "duration": 3616661200,
   "status": "passed"
 });
 });

@@ -13,6 +13,17 @@
             "value": "# In case of Example we will us Scenario Outline"
           }
         ],
+        "before": [
+          {
+            "result": {
+              "duration": 397200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FailurePayment.setBrowser()"
+            }
+          }
+        ],
         "line": 6,
         "name": "Test Unsuccesful end to end checkout flow due expire card details and Show the Output",
         "description": "",
@@ -22,7 +33,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8018030700,
+              "duration": 10751256000,
               "status": "passed"
             },
             "line": 8,
@@ -34,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 89504900,
+              "duration": 48426200,
               "status": "passed"
             },
             "line": 9,
@@ -46,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 312400300,
+              "duration": 859920700,
               "status": "passed"
             },
             "line": 10,
@@ -58,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 3040091500,
+              "duration": 3616661200,
               "status": "passed"
             },
             "line": 11,

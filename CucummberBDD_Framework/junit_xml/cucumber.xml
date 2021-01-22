@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="11.460027">
-    <testcase classname="UI automation framework" name="Test Unsuccesful end to end checkout flow due expire card details and Show the Output" time="11.460027">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.276661">
+    <testcase classname="UI automation framework" name="Test Unsuccesful end to end checkout flow due expire card details and Show the Output" time="15.276661">
         <system-out><![CDATA[Given User is on the webPage For buying pillows.............................passed
 When title of page is Sample Store..........................................passed
 Then User able to proceed with the payment checkout.........................passed
